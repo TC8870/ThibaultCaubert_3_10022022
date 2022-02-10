@@ -3,17 +3,70 @@
 /*Shrikhand*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*Roboto*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-/*font-family: 'Shrikhand', cursive;*/
-/*font-family: 'Roboto', sans-serif;*/
-/*tests temporaires*/
-p {
-  background-color: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+h1 {
+  font-family: 'Shrikhand', cursive;
 }
 
-img {
-  max-width: 500px;
+h2, p, nav input {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*@media screen and (max-width: 800px) {}*/
+/*Header + aside*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e6e6e6;
+  padding: 15px 0px 15px 0px;
+  -webkit-box-shadow: inset 3px 6px 5px -6px;
+          box-shadow: inset 3px 6px 5px -6px;
+}
+
+nav input {
+  text-align: center;
+  border: none;
+  background-color: #e6e6e6;
+  font-weight: bolder;
+  font-size: 5px larger;
+}
+
+aside {
+  background-color: #f3f3f3;
+}
+
+aside h2 {
+  margin-top: 0px;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 100;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,11 +2,12 @@
 $colorprimary: #9356DC;
 $colorsecondary: #FF79DA;
 $colortertiary:#99E2D0;
+$colorgrisfonce:rgb(230, 230, 230);
+$colorgrisclair:rgb(243, 243, 243);
 
 /*Polices*/
 /*Shrikhand*/ @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-/*Roboto*/ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*Roboto*/ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 
-
-/*font-family: 'Shrikhand', cursive;*/
-/*font-family: 'Roboto', sans-serif;*/
+h1{font-family: 'Shrikhand', cursive;}
+h2,p,nav input{font-family: 'Roboto', sans-serif;}

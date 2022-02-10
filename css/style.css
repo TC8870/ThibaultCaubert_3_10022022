@@ -1,5 +1,19 @@
+/*Codes couleurs*/
+/*Polices*/
+/*Shrikhand*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/*font-family: 'Shrikhand', cursive;*/
+/*font-family: 'Roboto', sans-serif;*/
+/*tests temporaires*/
 p {
-  color: red;
+  background-color: none;
+  font-family: 'Roboto', sans-serif;
   font-size: 50px;
+}
+
+img {
+  max-width: 500px;
 }
 /*# sourceMappingURL=style.css.map */

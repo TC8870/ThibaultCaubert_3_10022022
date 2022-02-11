@@ -1,9 +1,15 @@
+/*A coder ultérieurement*/
 /*@media screen and (max-width: 800px) {}*/
+article figure img{max-width: 100px;}
 
-/*Header + aside*/
+
+/*Géneral*/
+body {margin: 0px;}
+
+/*Header + nav*/
 header{display: flex;
     justify-content: center;
-    padding-top: 3px;}
+    padding: 10px;}
 
 nav{display: flex;
     justify-content: center;
@@ -17,13 +23,35 @@ nav{display: flex;
         font-weight:bolder;
         font-size:5px larger;}    }
 
-aside {background-color: $colorgrisclair;
+#blocmenutitre{
+    background-color: $colorgrisclair;
+    padding-bottom: 40px;}
+
+/*Aside*/
+aside {
     h2{
+        padding-left: 15%;
+        padding-right: 15%;
         margin-top: 0px;
-        padding-top: 20px;
+        padding-top: 50px;
         display: flex;
+        text-align: center;
         justify-content: center;}
-    p{      
+    p{  
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10px;
         display: flex;
-        justify-content: center;        
-        font-weight: 100;}  }
+        justify-content: center;  
+        text-align: center;      
+        font-weight: 100;}        
+    h3{
+        margin-left: 12px;
+        font-size: 20px;}
+    figure {@include fonctionnementmenu;
+        &.btnexplore {@include multicolorbtn}
+        figcaption {width: 200px;}    }
+    }
+
+
+p.Numbereffect{@include primarynumbertheme}

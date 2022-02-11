@@ -4,13 +4,24 @@
 /*Géneral*/
 body {margin: 0px;}
 
-/*Header + nav*/
+/*Header + main*/
 header{@include headerstyle}
+aside img{@include menus-styleimage}
+h1 {@include menus-styleh1}  
+main {
+    margin-top: -50px;
+    background-color: $colorgrisclair;}
 
 /*Section*/
 
+article {@include menuarticlesform;
+    h3{@include menuarticlesh3;}
+    p{@include menuarticlesp}
+}
 
-
+section{
+    display: flex;
+    justify-content: space-between;}
 
 /*Footer*/
 footer{@include mixinfooter-base;

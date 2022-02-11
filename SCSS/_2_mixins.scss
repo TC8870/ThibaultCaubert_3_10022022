@@ -70,3 +70,22 @@
 @mixin mixinfooter-a {
     text-decoration: none;
     color: white;}
+
+@mixin menus-styleh1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: $colorgrisclair;
+    padding: 30px;
+    position: relative;
+    padding-left: 15px;
+    font-size:28px;
+    top:20px;
+    display: flex;
+    justify-content: space-between;}
+
+@mixin menus-styleimage{    
+    margin-top: -40px;
+    max-width: 100%;
+    min-width: 100%;
+    position:relative;
+    bottom: -40px;}

@@ -7,11 +7,13 @@ article figure img{max-width: 100px;}
 body {margin: 0px;}
 
 /*Header + nav*/
-header{display: flex;
+header{
+    display: flex;
     justify-content: center;
     padding: 10px;}
 
-nav{display: flex;
+nav{
+    display: flex;
     justify-content: center;
     background-color: $colorgrisfonce;
     padding: 15px 0px 15px 0px;
@@ -48,10 +50,39 @@ aside {
     h3{
         margin-left: 12px;
         font-size: 20px;}
-    figure {@include fonctionnementmenu;
+    figure {
+        @include fonctionnementmenu;
         &.btnexplore {@include multicolorbtn}
         figcaption {width: 200px;}    }
+}
+
+p.Numbereffect{
+    @include primarynumbertheme}
+i.fa-mobile-alt {
+    color:$colorgrissmalldark}
+i.fas.fa-list-ul {
+    color:$colorgrissmalldark}
+i.fas.fa-store {
+    color:$colorprimary}
+
+/*Section*/
+
+
+
+/*Footer*/
+footer{
+    background-color: $colorgrisdark;
+    color: white;
+    padding-bottom: 20px;
+    img{
+        filter: invert(1);
+        padding-top: 20px;
+        padding-left: 10px;
+        height: 15px;}
+    ul{
+        padding-left: 5px;}
+    li{
+        list-style: none;
+        font-size: 14px;
+        margin:8px}
     }
-
-
-p.Numbereffect{@include primarynumbertheme}

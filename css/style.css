@@ -9,7 +9,7 @@ h1 {
   font-family: 'Shrikhand', cursive;
 }
 
-h2, h3, p, nav input, figure {
+h2, h3, p, nav input, figure, li {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -145,5 +145,43 @@ p.Numbereffect {
   width: 10px;
   padding: 9px;
   border-radius: 50%;
+}
+
+i.fa-mobile-alt {
+  color: #777777;
+}
+
+i.fas.fa-list-ul {
+  color: #777777;
+}
+
+i.fas.fa-store {
+  color: #9356DC;
+}
+
+/*Section*/
+/*Footer*/
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  padding-bottom: 20px;
+}
+
+footer img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  padding-top: 20px;
+  padding-left: 10px;
+  height: 15px;
+}
+
+footer ul {
+  padding-left: 5px;
+}
+
+footer li {
+  list-style: none;
+  font-size: 14px;
+  margin: 8px;
 }
 /*# sourceMappingURL=style.css.map */

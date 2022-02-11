@@ -18,16 +18,30 @@
     height: $Numbersize+1;
     width: $Numbersize+1;
     padding: $Numbersize;
-    border-radius: 50%;}
+    border-radius: 50%;
+    position: relative;
+    left:-15px;}
 
 @mixin fonctionnementmenu {
     display: flex;
     border-radius: 10px;
-    margin-left: 12px;
+    margin-left: 25px;
     margin-right: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     background-color:$colorgrisclair;
     align-items: center;
     justify-content:space-around;
     box-shadow: 0px 5px 5px $colorgrisfonce;
-    padding-right: 20%;}
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right: 10%;}
+
+@mixin imagemenuindex {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 80%;
+    min-height: 80%;
+    object-fit:cover}

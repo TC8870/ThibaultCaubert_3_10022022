@@ -1,7 +1,5 @@
 /*A coder ultérieurement*/
 /*@media screen and (max-width: 800px) {}*/
-article figure img{max-width: 100px;}
-
 
 /*Géneral*/
 body {margin: 0px;}
@@ -23,7 +21,7 @@ nav{
         border:none;
         background-color: $colorgrisfonce;
         font-weight:bolder;
-        font-size:5px larger;}    }
+        font-size:larger;}    }
 
 #blocmenutitre{
     background-color: $colorgrisclair;
@@ -53,19 +51,52 @@ aside {
     figure {
         @include fonctionnementmenu;
         &.btnexplore {@include multicolorbtn}
-        figcaption {width: 200px;}    }
+        figcaption {width: 75%;  }    }
 }
 
 p.Numbereffect{
     @include primarynumbertheme}
-i.fa-mobile-alt {
-    color:$colorgrissmalldark}
-i.fas.fa-list-ul {
-    color:$colorgrissmalldark}
-i.fas.fa-store {
-    color:$colorprimary}
+i.fa-mobile-alt,i.fas.fa-list-ul,i.fas.fa-store {
+    color:$colorgrissmalldark;
+    margin-left: 10%;
+    margin-right: 15%;}
+i.fas.fa-store{color:$colorprimary;}
 
 /*Section*/
+
+section {
+    h3{
+    margin-left: 12px;
+    font-size: 20px;}
+    figure{
+        margin-left:12px;
+        margin-right:12px;
+        padding-bottom:0px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px $colorgrisfonce;
+        height: 260px;}
+    figcaption,h4 {
+        margin-bottom:0px;
+        margin-top:5px;
+        margin-left:5px;
+        color: black;}
+    figcaption{
+        display: flex;
+        font-size: 14px;
+        margin-left:5px;
+        margin-right:20px;
+        justify-content: space-between;
+        font-weight: 100;}
+    img {@include imagemenuindex}
+    a{text-decoration: none;}
+}
+
+
+
+
+
+
+
 
 
 
@@ -74,6 +105,7 @@ footer{
     background-color: $colorgrisdark;
     color: white;
     padding-bottom: 20px;
+    font-weight: 100;
     img{
         filter: invert(1);
         padding-top: 20px;
@@ -85,4 +117,11 @@ footer{
         list-style: none;
         font-size: 14px;
         margin:8px}
+    a {
+        text-decoration: none;
+        color: white;}
     }
+
+i.fa-utensils,i.fa-handshake-angle{
+    margin-right:5px;
+    width: 15px;}

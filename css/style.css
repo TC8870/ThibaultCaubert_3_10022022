@@ -15,10 +15,6 @@ h2, h3, p, nav input, figure, li {
 
 /*A coder ultérieurement*/
 /*@media screen and (max-width: 800px) {}*/
-article figure img {
-  max-width: 100px;
-}
-
 /*Géneral*/
 body {
   margin: 0px;
@@ -53,7 +49,7 @@ nav input {
   border: none;
   background-color: #e6e6e6;
   font-weight: bolder;
-  font-size: 5px larger;
+  font-size: larger;
 }
 
 #blocmenutitre {
@@ -100,9 +96,9 @@ aside figure {
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
-  margin-left: 12px;
+  margin-left: 25px;
   margin-right: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   background-color: #f3f3f3;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -111,7 +107,9 @@ aside figure {
       justify-content: space-around;
   -webkit-box-shadow: 0px 5px 5px #e6e6e6;
           box-shadow: 0px 5px 5px #e6e6e6;
-  padding-right: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10%;
 }
 
 aside figure.btnexplore {
@@ -133,7 +131,7 @@ aside figure.btnexplore {
 }
 
 aside figure figcaption {
-  width: 200px;
+  width: 75%;
 }
 
 p.Numbereffect {
@@ -145,14 +143,14 @@ p.Numbereffect {
   width: 10px;
   padding: 9px;
   border-radius: 50%;
+  position: relative;
+  left: -15px;
 }
 
-i.fa-mobile-alt {
+i.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {
   color: #777777;
-}
-
-i.fas.fa-list-ul {
-  color: #777777;
+  margin-left: 10%;
+  margin-right: 15%;
 }
 
 i.fas.fa-store {
@@ -160,11 +158,65 @@ i.fas.fa-store {
 }
 
 /*Section*/
+section h3 {
+  margin-left: 12px;
+  font-size: 20px;
+}
+
+section figure {
+  margin-left: 12px;
+  margin-right: 12px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 5px #e6e6e6;
+          box-shadow: 0px 5px 5px #e6e6e6;
+  height: 260px;
+}
+
+section figcaption, section h4 {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: black;
+}
+
+section figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 100;
+}
+
+section img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 80%;
+  min-height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section a {
+  text-decoration: none;
+}
+
 /*Footer*/
 footer {
   background-color: #2b2b2b;
   color: white;
   padding-bottom: 20px;
+  font-weight: 100;
 }
 
 footer img {
@@ -183,5 +235,15 @@ footer li {
   list-style: none;
   font-size: 14px;
   margin: 8px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+i.fa-utensils, i.fa-handshake-angle {
+  margin-right: 5px;
+  width: 15px;
 }
 /*# sourceMappingURL=style.css.map */

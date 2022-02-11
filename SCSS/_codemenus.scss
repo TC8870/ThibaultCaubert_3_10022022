@@ -1,0 +1,25 @@
+/*A coder ultérieurement*/
+/*@media screen and (max-width: 800px) {}*/
+
+/*Géneral*/
+body {margin: 0px;}
+
+/*Header + nav*/
+header{@include headerstyle}
+
+/*Section*/
+
+
+
+
+/*Footer*/
+footer{@include mixinfooter-base;
+    img{@include mixinfooter-img}
+    ul{@include mixinfooter-ul}
+    li{@include mixinfooter-li}
+    a {@include mixinfooter-a}
+    }
+
+i.fa-utensils,i.fa-handshake-angle{
+    margin-right:5px;
+    width: 15px;}

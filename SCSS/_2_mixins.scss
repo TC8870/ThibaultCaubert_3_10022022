@@ -1,3 +1,8 @@
+@mixin headerstyle{    
+    display: flex;
+    justify-content: center;
+    padding: 10px;}
+
 @mixin multicolorbtn {
     display: flex;
     justify-content: center;
@@ -45,3 +50,23 @@
     max-height: 80%;
     min-height: 80%;
     object-fit:cover}
+
+@mixin mixinfooter-base {
+    background-color: $colorgrisdark;
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 100;}
+@mixin mixinfooter-img{
+    filter: invert(1);
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 15px;}
+@mixin mixinfooter-ul {
+    padding-left: 5px;}
+@mixin mixinfooter-li {
+    list-style: none;
+    font-size: 14px;
+    margin:8px}
+@mixin mixinfooter-a {
+    text-decoration: none;
+    color: white;}

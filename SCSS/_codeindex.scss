@@ -48,8 +48,9 @@ aside {
     figure {
         @include fonctionnementmenu;
         &.btnexplore {@include multicolorbtn}
+        &:hover {@include hovereffet}
         figcaption {width: 75%;  }    }
-}
+}  
 
 p.Numbereffect{
     @include primarynumbertheme}
@@ -71,7 +72,8 @@ section {
         padding-bottom:0px;
         border-radius: 10px;
         box-shadow: 0px 5px 5px $colorgrisfonce;
-        height: 260px;}
+        height: 260px;
+        &:hover{@include hovereffet}}
     figcaption,h4 {
         margin-bottom:0px;
         margin-top:5px;

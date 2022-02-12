@@ -13,11 +13,12 @@ h2, h3, p, nav input, figure, li {
   font-family: 'Roboto', sans-serif;
 }
 
-/*Mixin header*/
-/*Mixin aside*/
-/*Mixin Main Index*/
-/*Mixin Main menus*/
-/*Mixin footer*/
+/*Mixin Index+Menus header*/
+/*Mixin Index only aside*/
+/*Mixin Index only Main */
+/*Mixin Menus only Main*/
+/*Mixin Index+Menus footer*/
+/*Mixin boutons, effets,..*/
 /*A coder ultérieurement*/
 /*@media screen and (max-width: 800px) {}*/
 /*Géneral*/
@@ -125,7 +126,6 @@ aside figure.btnexplore {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  margin-bottom: 20px;
   padding: 10px;
   width: 140px;
   border-radius: 35px;
@@ -134,6 +134,12 @@ aside figure.btnexplore {
   background: linear-gradient(350deg, #9356DC, #FF79DA);
   -webkit-box-shadow: 0px 1px 2px black;
           box-shadow: 0px 1px 2px black;
+}
+
+aside figure:hover {
+  opacity: 0.75;
+  -webkit-box-shadow: 1px 0px 10px black;
+          box-shadow: 1px 0px 10px black;
 }
 
 aside figure figcaption {
@@ -177,6 +183,12 @@ section figure {
   -webkit-box-shadow: 0px 5px 5px #e6e6e6;
           box-shadow: 0px 5px 5px #e6e6e6;
   height: 260px;
+}
+
+section figure:hover {
+  opacity: 0.75;
+  -webkit-box-shadow: 1px 0px 10px black;
+          box-shadow: 1px 0px 10px black;
 }
 
 section figcaption, section h4 {

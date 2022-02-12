@@ -5,7 +5,12 @@
 body {margin: 0px;}
 
 /*Header + main*/
-header{@include headerstyle}
+header{@include headerstyle;}
+i.fa-solid.fa-arrow-left {
+    color:$colorgrisdark;
+    left:12px;
+    position: absolute;
+    font-size: 30px;}
 aside img{@include menus-styleimage}
 h1 {@include menus-styleh1}  
 main {
@@ -17,11 +22,12 @@ section {@include menuarticlesform;
     h3{@include menuarticlesh3}
     figure{@include menuarticlefigure}
     p{@include menuarticlesp;}
+    &:hover{@include hovereffet}
 }
 
 main h2 {@include menuarticlesh2}
-
-figure.btnexplore {@include multicolorbtn;}
+figure.btnexplore {@include multicolorbtn;
+    &:hover{@include hovereffet}}
 
 /*Footer*/
 footer{@include mixinfooter-base;

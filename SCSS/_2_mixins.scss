@@ -1,32 +1,10 @@
+/*Mixin header*/
 @mixin headerstyle{    
     display: flex;
     justify-content: center;
     padding: 10px;}
 
-@mixin multicolorbtn {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: 10px;
-    width: 140px;
-    border-radius: 35px;
-    color: white;
-    font-size: 12px;
-    background: linear-gradient(350deg, $colorprimary,$colorsecondary);
-    box-shadow: 0px 1px 2px black;}
-
-@mixin primarynumbertheme {
-    background-color: $colorprimary;
-    color:white;
-    font-weight:500;
-    font-size: $Numbersize+2;
-    height: $Numbersize+1;
-    width: $Numbersize+1;
-    padding: $Numbersize;
-    border-radius: 50%;
-    position: relative;
-    left:-15px;}
-
+/*Mixin aside*/
 @mixin fonctionnementmenu {
     display: flex;
     border-radius: 10px;
@@ -40,7 +18,30 @@
     padding-top:10px;
     padding-bottom:10px;
     padding-right: 10%;}
+@mixin primarynumbertheme {
+    background-color: $colorprimary;
+    color:white;
+    font-weight:500;
+    font-size: $Numbersize+2;
+    height: $Numbersize+1;
+    width: $Numbersize+1;
+    padding: $Numbersize;
+    border-radius: 50%;
+    position: relative;
+    left:-15px;}
+@mixin multicolorbtn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    width: 140px;
+    border-radius: 35px;
+    color: white;
+    font-size: 12px;
+    background: linear-gradient(350deg, $colorprimary,$colorsecondary);
+    box-shadow: 0px 1px 2px black;}
 
+/*Mixin Main Index*/
 @mixin imagemenuindex {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -50,7 +51,52 @@
     max-height: 80%;
     min-height: 80%;
     object-fit:cover}
+@mixin menus-styleh1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: $colorgrisclair;
+    padding: 30px;
+    position: relative;
+    padding-left: 15px;
+    font-size:28px;
+    top:20px;
+    display: flex;
+    justify-content: space-between;}
+@mixin menus-styleimage{    
+    margin-top: -40px;
+    max-width: 100%;
+    min-width: 100%;
+    position:relative;
+    bottom: -40px;}
 
+/*Mixin Main menus*/
+@mixin menuarticlesform{   
+    margin-left:15px;
+    margin-right:15px;
+    padding:8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 5px $colorgrisfonce;
+    border-radius: 12px;
+    background-color: white;}
+@mixin menuarticlesh3{
+    margin-top:2px;
+    font-size: 16px;
+    margin-bottom:0px;}
+@mixin menuarticlesp {
+    font-weight: 100;
+    font-size: 14px;
+    margin-top:5px;
+    margin-bottom: 2px;}
+@mixin menuarticlefigure{
+    margin:0px;
+    display: flex;
+    justify-content: space-between;}
+@mixin menuarticlesh2{
+    font-weight: lighter;
+    margin-left: 12px;
+    font-size: 20px;}
+
+/*Mixin footer*/
 @mixin mixinfooter-base {
     background-color: $colorgrisdark;
     color: white;
@@ -71,21 +117,4 @@
     text-decoration: none;
     color: white;}
 
-@mixin menus-styleh1{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: $colorgrisclair;
-    padding: 30px;
-    position: relative;
-    padding-left: 15px;
-    font-size:28px;
-    top:20px;
-    display: flex;
-    justify-content: space-between;}
 
-@mixin menus-styleimage{    
-    margin-top: -40px;
-    max-width: 100%;
-    min-width: 100%;
-    position:relative;
-    bottom: -40px;}

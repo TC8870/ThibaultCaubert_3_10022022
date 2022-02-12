@@ -13,6 +13,11 @@ h2, h3, p, nav input, figure, li {
   font-family: 'Roboto', sans-serif;
 }
 
+/*Mixin header*/
+/*Mixin aside*/
+/*Mixin Main Index*/
+/*Mixin Main menus*/
+/*Mixin footer*/
 /*A coder ultérieurement*/
 /*@media screen and (max-width: 800px) {}*/
 /*Géneral*/
@@ -120,6 +125,7 @@ aside figure.btnexplore {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  margin-bottom: 20px;
   padding: 10px;
   width: 140px;
   border-radius: 35px;

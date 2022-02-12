@@ -13,15 +13,15 @@ main {
     background-color: $colorgrisclair;}
 
 /*Section*/
-
-article {@include menuarticlesform;
-    h3{@include menuarticlesh3;}
-    p{@include menuarticlesp}
+section {@include menuarticlesform;
+    h3{@include menuarticlesh3}
+    figure{@include menuarticlefigure}
+    p{@include menuarticlesp;}
 }
 
-section{
-    display: flex;
-    justify-content: space-between;}
+main h2 {@include menuarticlesh2}
+
+figure.btnexplore {@include multicolorbtn;}
 
 /*Footer*/
 footer{@include mixinfooter-base;

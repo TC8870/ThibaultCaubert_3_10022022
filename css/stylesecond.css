@@ -19,8 +19,7 @@ h2, h3, p, nav input, figure, li {
 /*Mixin Menus only Main*/
 /*Mixin Index+Menus footer*/
 /*Mixin boutons, effets,..*/
-/*A coder ultérieurement*/
-/*@media screen and (max-width: 800px) {}*/
+/*Mobile First
 /*Géneral*/
 body {
   margin: 0px;
@@ -74,10 +73,6 @@ main {
   margin-top: -50px;
   padding-bottom: 70px;
   background-color: #f3f3f3;
-}
-
-.logo2 {
-  border: 5px solid blue;
 }
 
 /*Section*/
@@ -190,5 +185,39 @@ footer a {
 i.fa-utensils, i.fa-handshake-angle {
   margin-right: 5px;
   width: 15px;
+}
+
+/*Responsive Tablet + Desktop*/
+@media screen and (min-width: 800px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin: 0px;
+    padding-right: 20px;
+  }
+  h1 {
+    padding-bottom: 0px;
+  }
+  aside img {
+    position: absolute;
+    -webkit-box-shadow: 1px 0px 10px black;
+            box-shadow: 1px 0px 10px black;
+    top: 0px;
+    right: 0px;
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 180px;
+  }
+  article {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=stylesecond.css.map */

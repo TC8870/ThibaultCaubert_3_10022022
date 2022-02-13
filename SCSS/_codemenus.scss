@@ -1,6 +1,4 @@
-/*A coder ultérieurement*/
-/*@media screen and (max-width: 800px) {}*/
-
+/*Mobile First
 /*Géneral*/
 body {margin: 0px;}
 
@@ -17,9 +15,6 @@ main {
     margin-top: -50px;
     padding-bottom: 70px;
     background-color: $colorgrisclair;}
-
-.logo2{border: 5px solid blue;}
-
 
 /*Section*/
 section {@include menuarticlesform;
@@ -46,3 +41,25 @@ footer{@include mixinfooter-base;
 i.fa-utensils,i.fa-handshake-angle{
     margin-right:5px;
     width: 15px;}
+
+/*Responsive Tablet + Desktop*/
+@media screen and (min-width: 800px){
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items:stretch;
+        margin: 0px;
+        padding-right:20px;}
+    h1 {
+        padding-bottom:0px;}
+    aside img{
+        position: absolute;
+        box-shadow: 1px 0px 10px black;
+        top:0px;
+        right:0px;
+        max-width: 250px;
+        min-width: 250px;
+        max-height: 180px;}
+    article {
+        width: 30%;}
+    }

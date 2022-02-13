@@ -19,6 +19,87 @@ h2, h3, p, nav input, figure, li {
 /*Mixin Menus only Main*/
 /*Mixin Index+Menus footer*/
 /*Mixin boutons, effets,..*/
+@-webkit-keyframes rotationspinner {
+  0% {
+    rotate: 0deg;
+  }
+  80% {
+    opacity: 0.90;
+  }
+  99% {
+    rotate: 360deg;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotationspinner {
+  0% {
+    rotate: 0deg;
+  }
+  80% {
+    opacity: 0.90;
+  }
+  99% {
+    rotate: 360deg;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bodyeffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bodyeffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animationmenus {
+  0% {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animationmenus {
+  0% {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*Mobile First
 /*Géneral*/
 body {
@@ -57,7 +138,6 @@ h1 {
   border-top-right-radius: 20px;
   background-color: #f3f3f3;
   padding: 30px;
-  position: relative;
   padding-left: 15px;
   font-size: 28px;
   top: 20px;
@@ -219,5 +299,15 @@ i.fa-utensils, i.fa-handshake-angle {
   article {
     width: 30%;
   }
+}
+
+/*Animations*/
+article {
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 /*# sourceMappingURL=stylesecond.css.map */

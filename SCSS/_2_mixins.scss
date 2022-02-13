@@ -45,7 +45,6 @@
     border-top-right-radius: 20px;
     background-color: $colorgrisclair;
     padding: 30px;
-    position: relative;
     padding-left: 15px;
     font-size:28px;
     top:20px;
@@ -126,4 +125,4 @@
 @mixin hovereffet{
     opacity:0.75;
     box-shadow: 1px 0px 10px black;}
-    
+

@@ -63,3 +63,9 @@ i.fa-utensils,i.fa-handshake-angle{
     article {
         width: 30%;}
     }
+
+/*Animations*/
+article{
+    animation-name: animationmenus;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;}

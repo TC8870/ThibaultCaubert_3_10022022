@@ -7,7 +7,7 @@ body {margin: 0px;}
 /*Header + main*/
 header{@include headerstyle;}
 i.fa-solid.fa-arrow-left {
-    color:$colorgrisdark;
+    color:$colorgrissmalldark;
     left:12px;
     position: absolute;
     font-size: 30px;}
@@ -15,7 +15,11 @@ aside img{@include menus-styleimage}
 h1 {@include menus-styleh1}  
 main {
     margin-top: -50px;
+    padding-bottom: 70px;
     background-color: $colorgrisclair;}
+
+.logo2{border: 5px solid blue;}
+
 
 /*Section*/
 section {@include menuarticlesform;
@@ -25,8 +29,10 @@ section {@include menuarticlesform;
     &:hover{@include hovereffet}
 }
 
-main h2 {@include menuarticlesh2}
+h2 {@include menuarticlesh2}
+
 figure.btnexplore {@include multicolorbtn;
+    margin-top:40px;
     &:hover{@include hovereffet}}
 
 /*Footer*/

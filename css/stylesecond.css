@@ -15,7 +15,7 @@ h2, h3, p, nav input, figure, li {
 
 /*Mixin Index+Menus header*/
 /*Mixin Index only aside*/
-/*Mixin Index only Main */
+/*Mixin Menus only Main */
 /*Mixin Menus only Main*/
 /*Mixin Index+Menus footer*/
 /*Mixin boutons, effets,..*/
@@ -38,7 +38,7 @@ header {
 }
 
 i.fa-solid.fa-arrow-left {
-  color: #2b2b2b;
+  color: #777777;
   left: 12px;
   position: absolute;
   font-size: 30px;
@@ -50,6 +50,7 @@ aside img {
   min-width: 100%;
   position: relative;
   bottom: -40px;
+  max-height: 300px;
 }
 
 h1 {
@@ -71,7 +72,12 @@ h1 {
 
 main {
   margin-top: -50px;
+  padding-bottom: 70px;
   background-color: #f3f3f3;
+}
+
+.logo2 {
+  border: 5px solid blue;
 }
 
 /*Section*/
@@ -115,10 +121,14 @@ section:hover {
           box-shadow: 1px 0px 10px black;
 }
 
-main h2 {
-  font-weight: lighter;
+h2 {
+  font-weight: 100;
   margin-left: 12px;
+  margin-top: 40px;
   font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
 }
 
 figure.btnexplore {
@@ -137,6 +147,7 @@ figure.btnexplore {
   background: linear-gradient(350deg, #9356DC, #FF79DA);
   -webkit-box-shadow: 0px 1px 2px black;
           box-shadow: 0px 1px 2px black;
+  margin-top: 40px;
 }
 
 figure.btnexplore:hover {

@@ -16,7 +16,6 @@ h2, h3, p, nav input, figure, li {
 /*Mixin Index+Menus header*/
 /*Mixin Index only aside*/
 /*Mixin Menus only Main */
-/*Mixin Menus only Main*/
 /*Mixin Index+Menus footer*/
 /*Mixin boutons, effets,..*/
 @-webkit-keyframes rotationspinner {
@@ -137,8 +136,10 @@ h1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #f3f3f3;
-  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-left: 15px;
+  padding-right: 50px;
   font-size: 28px;
   top: 20px;
   display: -webkit-box;
@@ -309,5 +310,35 @@ article {
           animation-fill-mode: forwards;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+}
+
+/*Coeurs*/
+.parentcoeur {
+  margin: 0px;
+  margin-right: 10px;
+  padding: 0px;
+  position: relative;
+  background-color: red;
+}
+
+i.i1.fas.fa-heart {
+  color: #9356DC;
+  opacity: 1;
+  font-size: 30px;
+  text-shadow: 0px 0px 2px black;
+  position: absolute;
+}
+
+i.i2.fas.fa-heart {
+  color: #f3f3f3;
+  font-size: 30px;
+  text-shadow: 0px 0px 2px black;
+  position: absolute;
+}
+
+i.i2.fas.fa-heart:hover {
+  opacity: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 /*# sourceMappingURL=stylesecond.css.map */

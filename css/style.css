@@ -16,7 +16,6 @@ h2, h3, p, nav input, figure, li {
 /*Mixin Index+Menus header*/
 /*Mixin Index only aside*/
 /*Mixin Menus only Main */
-/*Mixin Menus only Main*/
 /*Mixin Index+Menus footer*/
 /*Mixin boutons, effets,..*/
 @-webkit-keyframes rotationspinner {
@@ -298,31 +297,6 @@ section figcaption {
   font-weight: 100;
 }
 
-section figcaption #i1 {
-  color: #9356DC;
-  opacity: 1;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: absolute;
-  font-size: 14px;
-  text-shadow: 0px 0px 2px black;
-  left: 90%;
-}
-
-section figcaption #i2 {
-  color: white;
-  text-shadow: 0px 0px 2px black;
-  position: absolute;
-  left: 90%;
-}
-
-section figcaption #i2:hover {
-  opacity: 0;
-  -webkit-transition-duration: 3s;
-          transition-duration: 3s;
-}
-
 section img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -339,6 +313,31 @@ section img {
 
 section a {
   text-decoration: none;
+}
+
+article figure {
+  position: relative;
+}
+
+article figure p.New {
+  background-color: #68e0cc;
+  color: #3a7e72;
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  right: 15px;
+  top: 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*Footer*/
@@ -456,7 +455,11 @@ i.fa-utensils, i.fa-handshake-angle {
 }
 
 /*Main*/
-section, footer {
+aside, section, footer {
+  opacity: 0;
+}
+
+aside, section, footer {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   -webkit-animation-name: bodyeffect;
@@ -467,5 +470,33 @@ section, footer {
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+/*Coeurs*/
+.parentcoeur {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  background-color: red;
+}
+
+i.i1.fas.fa-heart {
+  color: #9356DC;
+  opacity: 1;
+  font-size: 14px;
+  text-shadow: 0px 0px 2px black;
+  position: absolute;
+}
+
+i.i2.fas.fa-heart {
+  color: white;
+  text-shadow: 0px 0px 2px black;
+  position: absolute;
+}
+
+i.i2.fas.fa-heart:hover {
+  opacity: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 /*# sourceMappingURL=style.css.map */

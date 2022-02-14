@@ -69,3 +69,23 @@ article{
     animation-name: animationmenus;
     animation-fill-mode: forwards;
     animation-duration: 4s;}
+
+/*Coeurs*/
+.parentcoeur{
+    margin:0px;
+    margin-right: 10px;
+    padding:0px;
+    position: relative;
+    background-color: red;}
+i.i1.fas.fa-heart{color:$colorprimary;
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: 0px 0px 2px black;
+    position: absolute;}
+i.i2.fas.fa-heart{color:$colorgrisclair;
+    font-size: 30px;
+    text-shadow: 0px 0px 2px black;
+    position: absolute;
+    &:hover{
+        opacity: 0;
+        transition-duration: 1s;} }

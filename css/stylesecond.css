@@ -14,19 +14,22 @@ h2, h3, p, nav input, figure, li {
 }
 
 /*Mixin Index+Menus header*/
-/*Mixin Index only aside*/
-/*Mixin Menus only Main */
+/*Mixin Index only*/
+/*Mixin Menus only*/
 /*Mixin Index+Menus footer*/
 /*Mixin boutons, effets,..*/
+/*Mixin Keyframes*/
 @-webkit-keyframes rotationspinner {
   0% {
-    rotate: 0deg;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   80% {
     opacity: 0.90;
   }
   99% {
-    rotate: 360deg;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   100% {
     opacity: 0;
@@ -34,13 +37,15 @@ h2, h3, p, nav input, figure, li {
 }
 @keyframes rotationspinner {
   0% {
-    rotate: 0deg;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   80% {
     opacity: 0.90;
   }
   99% {
-    rotate: 360deg;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   100% {
     opacity: 0;
@@ -67,34 +72,26 @@ h2, h3, p, nav input, figure, li {
 
 @-webkit-keyframes animationmenus {
   0% {
-    -webkit-transform: translate(0px, 100px);
-            transform: translate(0px, 100px);
-  }
-  0% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-  }
-  100% {
     opacity: 1;
   }
 }
 
 @keyframes animationmenus {
   0% {
-    -webkit-transform: translate(0px, 100px);
-            transform: translate(0px, 100px);
-  }
-  0% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-  }
-  100% {
     opacity: 1;
   }
 }
@@ -286,6 +283,8 @@ i.fa-utensils, i.fa-handshake-angle {
   }
   h1 {
     padding-bottom: 0px;
+    padding-right: 300px;
+    margin-bottom: 0px;
   }
   aside img {
     position: absolute;
@@ -295,7 +294,7 @@ i.fa-utensils, i.fa-handshake-angle {
     right: 0px;
     max-width: 250px;
     min-width: 250px;
-    max-height: 180px;
+    height: 200px;
   }
   article {
     width: 30%;
@@ -303,13 +302,175 @@ i.fa-utensils, i.fa-handshake-angle {
 }
 
 /*Animations*/
-article {
+a.G1-Entrées h2 {
   -webkit-animation-name: animationmenus;
           animation-name: animationmenus;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G1-Entrées1 {
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G1-Entrées2 {
+  opacity: 0;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G1-Entrées3 {
+  opacity: 0;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G1-Entrées4 {
+  opacity: 0;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+a.G2-Plats h2 {
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G2-Plats1 {
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G2-Plats2 {
+  opacity: 0;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G2-Plats3 {
+  opacity: 0;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G2-Plats4 {
+  opacity: 0;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+a.G3-Desserts h2 {
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G3-Desserts1 {
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G3-Desserts2 {
+  opacity: 0;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G3-Desserts3 {
+  opacity: 0;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+}
+
+section.G3-Desserts4 {
+  opacity: 0;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  -webkit-animation-name: animationmenus;
+          animation-name: animationmenus;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 
 /*Coeurs*/

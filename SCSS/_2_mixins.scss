@@ -139,3 +139,32 @@
     opacity:0.75;
     box-shadow: 1px 0px 10px black;}
 
+/*Mixin Keyframes*/
+@mixin timemenu0{    
+    animation-name: animationmenus;
+    animation-fill-mode: forwards;
+    animation-duration: $Timemenu;}
+@mixin timemenu1{
+    opacity: 0;
+    animation-delay:$Timemenu + $timetransition;
+    animation-name: animationmenus;
+    animation-fill-mode: forwards;
+    animation-duration: $Timeplat;}
+@mixin timemenu2{
+    opacity: 0;
+    animation-delay:$Timemenu + $timetransition*2;
+    animation-name: animationmenus;
+    animation-fill-mode: forwards;
+    animation-duration: $Timeplat;}
+@mixin timemenu3{
+    opacity: 0;
+    animation-delay:$Timemenu + $timetransition*3;
+    animation-name: animationmenus;
+    animation-fill-mode: forwards;
+    animation-duration: $Timeplat;}
+@mixin timemenu4{
+    opacity: 0;
+    animation-delay:$Timemenu + $timetransition*4;
+    animation-name: animationmenus;
+    animation-fill-mode: forwards;
+    animation-duration: $Timeplat;}

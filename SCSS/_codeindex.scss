@@ -68,14 +68,15 @@ section {
     margin-left: 12px;
     font-size: 20px;}
     figure{
-        margin-left:12px;
+        margin-left:15px;
         margin-right:12px;
-        padding-bottom:0px;
+        padding-bottom:10px;
         border-radius: 10px;
         box-shadow: 0px 5px 5px $colorgrisfonce;
         height: 260px;
         &:hover{@include hovereffet}}
     figcaption,h4 {
+        padding-left:10px;
         margin-bottom:0px;
         margin-top:5px;
         margin-left:5px;
@@ -109,6 +110,8 @@ i.fa-utensils,i.fa-handshake-angle{
 /*Responsive Tablet + Desktop*/
 @media screen and (min-width: 800px){
 
+h1{background-color: red;}
+
 aside {
     padding:0px;
     display:flex;
@@ -130,8 +133,10 @@ section{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     h3{
         width: 100%;
+        text-align: center;
         margin-top: 30px;}
     article{
         min-width: 45%;
@@ -148,8 +153,8 @@ section{
     color:$colorprimary;
     position: absolute;
     width:100%;
-    top:20px;
-    font-size: 200px; 
+    top:50px;
+    font-size: 400px; 
     &{color:$colorprimary;
         animation-name: rotationspinner;
         animation-duration: 2s;
@@ -158,8 +163,7 @@ section{
     }
 
 /*Main*/
-aside,section,footer{opacity: 0;}
-aside,section,footer{
+header,nav,aside,section,footer{opacity: 0;
     animation-delay: 2s;
     animation-name: bodyeffect;
     animation-duration: 2s;
@@ -169,16 +173,18 @@ aside,section,footer{
 /*Coeurs*/
 .parentcoeur{
     margin:0px;
+    margin-right:20px;
     padding:0px;
     position: relative;
     background-color: red;}
 i.i1.fas.fa-heart{color:$colorprimary;
     opacity: 1;
-    font-size: 14px;
+    font-size: 18px;
     text-shadow: 0px 0px 2px black;
     position: absolute;}
 i.i2.fas.fa-heart{color:white;
     text-shadow: 0px 0px 2px black;
+    font-size: 18px;
     position: absolute;
     &:hover{
         opacity: 0;

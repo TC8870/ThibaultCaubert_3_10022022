@@ -1,7 +1,7 @@
 @keyframes rotationspinner{
-    0% {rotate:0deg}
+    0% {transform :rotate(0deg)}
     80%{opacity: 0.90;}
-    99%{rotate:360deg}
+    99%{transform :rotate(360deg)}
     100%{opacity: 0;}}
 
 @keyframes bodyeffect{
@@ -9,7 +9,9 @@
     100% {opacity: 1;}}
 
 @keyframes animationmenus{
-    0%{transform:translate(0px, 100px)}
-    0% {opacity: 0;}
-    100%{transform:translate(0px, 0px)}
-    100%{opacity: 1;}}
+    0%{
+        transform:translate(0px, 20px);
+        opacity: 0;}
+    100%{
+        transform:translate(0px, 0px);
+        opacity: 1;}}

@@ -14,19 +14,22 @@ h2, h3, p, nav input, figure, li {
 }
 
 /*Mixin Index+Menus header*/
-/*Mixin Index only aside*/
-/*Mixin Menus only Main */
+/*Mixin Index only*/
+/*Mixin Menus only*/
 /*Mixin Index+Menus footer*/
 /*Mixin boutons, effets,..*/
+/*Mixin Keyframes*/
 @-webkit-keyframes rotationspinner {
   0% {
-    rotate: 0deg;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   80% {
     opacity: 0.90;
   }
   99% {
-    rotate: 360deg;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   100% {
     opacity: 0;
@@ -34,13 +37,15 @@ h2, h3, p, nav input, figure, li {
 }
 @keyframes rotationspinner {
   0% {
-    rotate: 0deg;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   80% {
     opacity: 0.90;
   }
   99% {
-    rotate: 360deg;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   100% {
     opacity: 0;
@@ -67,34 +72,26 @@ h2, h3, p, nav input, figure, li {
 
 @-webkit-keyframes animationmenus {
   0% {
-    -webkit-transform: translate(0px, 100px);
-            transform: translate(0px, 100px);
-  }
-  0% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-  }
-  100% {
     opacity: 1;
   }
 }
 
 @keyframes animationmenus {
   0% {
-    -webkit-transform: translate(0px, 100px);
-            transform: translate(0px, 100px);
-  }
-  0% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-  }
-  100% {
     opacity: 1;
   }
 }
@@ -262,9 +259,9 @@ section h3 {
 }
 
 section figure {
-  margin-left: 12px;
+  margin-left: 15px;
   margin-right: 12px;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 5px 5px #e6e6e6;
           box-shadow: 0px 5px 5px #e6e6e6;
@@ -278,6 +275,7 @@ section figure:hover {
 }
 
 section figcaption, section h4 {
+  padding-left: 10px;
   margin-bottom: 0px;
   margin-top: 5px;
   margin-left: 5px;
@@ -378,6 +376,9 @@ i.fa-utensils, i.fa-handshake-angle {
 
 /*Responsive Tablet + Desktop*/
 @media screen and (min-width: 800px) {
+  h1 {
+    background-color: red;
+  }
   aside {
     padding: 0px;
     display: -webkit-box;
@@ -414,9 +415,13 @@ i.fa-utensils, i.fa-handshake-angle {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   section h3 {
     width: 100%;
+    text-align: center;
     margin-top: 30px;
   }
   section article {
@@ -438,8 +443,8 @@ i.fa-utensils, i.fa-handshake-angle {
   color: #9356DC;
   position: absolute;
   width: 100%;
-  top: 20px;
-  font-size: 200px;
+  top: 50px;
+  font-size: 400px;
 }
 
 .fas.fa-spinner {
@@ -455,11 +460,8 @@ i.fa-utensils, i.fa-handshake-angle {
 }
 
 /*Main*/
-aside, section, footer {
+header, nav, aside, section, footer {
   opacity: 0;
-}
-
-aside, section, footer {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   -webkit-animation-name: bodyeffect;
@@ -475,6 +477,7 @@ aside, section, footer {
 /*Coeurs*/
 .parentcoeur {
   margin: 0px;
+  margin-right: 20px;
   padding: 0px;
   position: relative;
   background-color: red;
@@ -483,7 +486,7 @@ aside, section, footer {
 i.i1.fas.fa-heart {
   color: #9356DC;
   opacity: 1;
-  font-size: 14px;
+  font-size: 18px;
   text-shadow: 0px 0px 2px black;
   position: absolute;
 }
@@ -491,6 +494,7 @@ i.i1.fas.fa-heart {
 i.i2.fas.fa-heart {
   color: white;
   text-shadow: 0px 0px 2px black;
+  font-size: 18px;
   position: absolute;
 }
 

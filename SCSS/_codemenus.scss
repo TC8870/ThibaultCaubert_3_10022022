@@ -51,7 +51,9 @@ i.fa-utensils,i.fa-handshake-angle{
         margin: 0px;
         padding-right:20px;}
     h1 {
-        padding-bottom:0px;}
+        padding-bottom:0px;
+        padding-right: 300px;
+        margin-bottom: 0px;}
     aside img{
         position: absolute;
         box-shadow: 1px 0px 10px black;
@@ -59,16 +61,29 @@ i.fa-utensils,i.fa-handshake-angle{
         right:0px;
         max-width: 250px;
         min-width: 250px;
-        max-height: 180px;}
+        height: 200px;}
     article {
         width: 30%;}
     }
 
 /*Animations*/
-article{
-    animation-name: animationmenus;
-    animation-fill-mode: forwards;
-    animation-duration: 4s;}
+a.G1-Entrées h2{  @include timemenu0}
+section.G1-Entrées1{@include timemenu1}
+section.G1-Entrées2{@include timemenu2}
+section.G1-Entrées3{@include timemenu3}
+section.G1-Entrées4{@include timemenu4}
+
+a.G2-Plats h2{  @include timemenu0}
+section.G2-Plats1{@include timemenu1}
+section.G2-Plats2{@include timemenu2}
+section.G2-Plats3{@include timemenu3}
+section.G2-Plats4{@include timemenu4}
+
+a.G3-Desserts h2{  @include timemenu0}
+section.G3-Desserts1{@include timemenu1}
+section.G3-Desserts2{@include timemenu2}
+section.G3-Desserts3{@include timemenu3}
+section.G3-Desserts4{@include timemenu4}
 
 /*Coeurs*/
 .parentcoeur{

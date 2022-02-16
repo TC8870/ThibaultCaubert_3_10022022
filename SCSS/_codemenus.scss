@@ -1,111 +1,129 @@
 /*Mobile First
 /*Géneral*/
-body {margin: 0px;}
+    body {margin: 0px;}
 
 /*Header + main*/
-header{@include headerstyle;}
-i.fa-solid.fa-arrow-left {
-    color:$colorgrissmalldark;
-    left:12px;
-    position: absolute;
-    font-size: 30px;}
-aside img{@include menus-styleimage;
-    bottom:-60px;
-}
-h1 {@include menus-styleh1;}  
+    header{@include headerstyle;}
+    i.fa-solid.fa-arrow-left {
+        color:$colorgrissmalldark;
+        left:12px;
+        position: absolute;
+        font-size: 30px;}
+    aside img{@include menus-styleimage;
 
+    }
+    h1 {@include menus-styleh1;}  
 
-main {
-    margin-top: -50px;
-    padding-bottom: 70px;
-    background-color: $colorgrisclair;}
+    main {
+        margin-top: -50px;
+        padding-bottom: 70px;
+        background-color: $colorgrisclair;}
 
 /*Section*/
-section {   
-    @include menuarticlesform;
-    h3{@include menuarticlesh3;    }
-    figure{@include menuarticlefigure;}
-    p{@include menuarticlesp;}
-    &:hover{@include hovereffet}
-}
+    section {
+        @include menuarticlesform;
+        h3{@include menuarticlesh3;    }
+        figure{@include menuarticlefigure;}
+        p{@include menuarticlesp;}
+        &:hover{@include hovereffet}
+    }
 
-h2 {@include menuarticlesh2}
+    h2 {@include menuarticlesh2}
 
-figure.btnexplore {@include multicolorbtn;
-    margin-top:40px;
-    &:hover{@include hovereffet}}
+    .Platbloc1{@include Platbloc1}
+    .Platbloc2{@include Platbloc2;
+    i{color:white;
+    font-size: 25px;}}
+
+    figure.btnexplore {@include multicolorbtn;
+        margin-top:40px;
+        &:hover{@include hovereffet}}
 
 /*Footer*/
-footer{@include mixinfooter-base;
-    img{@include mixinfooter-img}
-    ul{@include mixinfooter-ul}
-    li{@include mixinfooter-li}
-    a {@include mixinfooter-a}
-    }
+    footer{@include mixinfooter-base;
+        img{@include mixinfooter-img}
+        ul{@include mixinfooter-ul}
+        li{@include mixinfooter-li}
+        a {@include mixinfooter-a}
+        }
 
-i.fa-utensils,i.fa-handshake-angle{
-    margin-right:5px;
-    width: 15px;}
+    i.fa-utensils,i.fa-handshake-angle{
+        margin-right:5px;
+        width: 15px;}
 
 /*Responsive Tablet + Desktop*/
-@media screen and (min-width: 800px){
-    main {
-        display: flex;
-        flex-direction: row;
-        align-items:stretch;
-        margin: 0px;
-        padding-right:20px;}
-    h1 {
-        padding-bottom:0px;
-        padding-right: 50px;
-        margin-bottom: -10px;}
-    aside img{
-        position: absolute;
-        border-radius: 100px;
-        top:0px;
-        right:20px;
-        max-width: 200px;
-        min-width: 200px;
-        height: 150px;}
-    article {
-        width: 30%;}
-    }
+    @media screen and (min-width: 800px){
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items:stretch;
+            margin: 0px;
+            padding-right:20px;}
+        h1 {
+            padding-bottom:0px;
+            padding-right: 50px;
+            margin-bottom: -10px;}
+        aside img{
+            position: absolute;
+            border-radius: 100px;
+            top:0px;
+            right:20px;
+            max-width: 200px;
+            min-width: 200px;
+            height: 150px;}
+        article {
+            width: 30%;}
+        }
 
 /*Animations*/
-a.G1-Entrées h2{  @include timemenu0}
-section.G1-Entrées1{@include timemenu1}
-section.G1-Entrées2{@include timemenu2}
-section.G1-Entrées3{@include timemenu3}
-section.G1-Entrées4{@include timemenu4}
+    /*Affichage des plats*/
+    a.G1-Entrées h2{  @include timemenu0}
+    section.G1-Entrées1{@include timemenu1}
+    section.G1-Entrées2{@include timemenu2}
+    section.G1-Entrées3{@include timemenu3}
+    section.G1-Entrées4{@include timemenu4}
 
-a.G2-Plats h2{  @include timemenu0}
-section.G2-Plats1{@include timemenu1}
-section.G2-Plats2{@include timemenu2}
-section.G2-Plats3{@include timemenu3}
-section.G2-Plats4{@include timemenu4}
+    a.G2-Plats h2{  @include timemenu0}
+    section.G2-Plats1{@include timemenu1}
+    section.G2-Plats2{@include timemenu2}
+    section.G2-Plats3{@include timemenu3}
+    section.G2-Plats4{@include timemenu4}
 
-a.G3-Desserts h2{  @include timemenu0}
-section.G3-Desserts1{@include timemenu1}
-section.G3-Desserts2{@include timemenu2}
-section.G3-Desserts3{@include timemenu3}
-section.G3-Desserts4{@include timemenu4}
+    a.G3-Desserts h2{  @include timemenu0}
+    section.G3-Desserts1{@include timemenu1}
+    section.G3-Desserts2{@include timemenu2}
+    section.G3-Desserts3{@include timemenu3}
+    section.G3-Desserts4{@include timemenu4}
 
-/*Coeurs*/
-.parentcoeur{
-    margin:0px;
-    margin-right: 10px;
-    padding:0px;
-    position: relative;
-    background-color: red;}
-i.i1.fas.fa-heart{color:$colorprimary;
-    opacity: 1;
-    font-size: 30px;
-    text-shadow: 0px 0px 2px black;
-    position: absolute;}
-i.i2.fas.fa-heart{color:$colorgrisclair;
-    font-size: 30px;
-    text-shadow: 0px 0px 2px black;
-    position: absolute;
-    &:hover{
-        opacity: 0;
-        transition-duration: 1s;} }
+    /*Coeurs*/
+    .parentcoeur{
+        margin:0px;
+        margin-right: 10px;
+        padding:0px;
+        position: relative;
+        background-color: red;}
+    i.i1.fas.fa-heart{color:$colorprimary;
+        opacity: 1;
+        font-size: 30px;
+        text-shadow: 0px 0px 2px black;
+        position: absolute;}
+    i.i2.fas.fa-heart{color:$colorgrisclair;
+        font-size: 30px;
+        text-shadow: 0px 0px 2px black;
+        position: absolute;
+        &:hover{
+            opacity: 0;
+            transition-duration: 1s;} }
+
+    /*Animation Coche*/
+section:hover{
+    .Platbloc2{
+        animation-name:Plattaillebloc ;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;}
+    i{
+        animation-name: Platrotation;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        transition-timing-function:cubic-bezier(1,-0.05,0,1)}
+    }

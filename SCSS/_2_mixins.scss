@@ -54,23 +54,24 @@
 
 /*Mixin Menus only*/   
 @mixin menus-styleh1{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     background-color: $colorgrisclair;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 50px;
     font-size:28px;
-    top:20px;
+    top:-10px;
     display: flex;
-    justify-content: space-between;}
+    justify-content: space-between;
+    position: relative;}
 @mixin menus-styleimage{    
     margin-top: -40px;
     max-width: 100%;
     min-width: 100%;
     position:relative;
-    bottom: -40px;
+    bottom:-100px;
     max-height: 300px;}
 @mixin menuarticlesform{   
     margin-left:12px;
@@ -81,10 +82,17 @@
     border-radius: 12px;
     background-color: white;}
 @mixin menuarticlesh3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-top:2px;
     font-size: 16px;
     margin-bottom:0px;}
 @mixin menuarticlesp {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75%;
     font-weight: 100;
     font-size: 14px;
     margin-top:5px;

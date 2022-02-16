@@ -125,26 +125,28 @@ aside img {
   max-width: 100%;
   min-width: 100%;
   position: relative;
-  bottom: -40px;
+  bottom: -100px;
   max-height: 300px;
+  bottom: -60px;
 }
 
 h1 {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   background-color: #f3f3f3;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   padding-left: 15px;
   padding-right: 50px;
   font-size: 28px;
-  top: 20px;
+  top: -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 main {
@@ -166,6 +168,9 @@ section {
 }
 
 section h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top: 2px;
   font-size: 16px;
   margin-bottom: 0px;
@@ -182,6 +187,10 @@ section figure {
 }
 
 section p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75%;
   font-weight: 100;
   font-size: 14px;
   margin-top: 5px;
@@ -283,18 +292,17 @@ i.fa-utensils, i.fa-handshake-angle {
   }
   h1 {
     padding-bottom: 0px;
-    padding-right: 300px;
-    margin-bottom: 0px;
+    padding-right: 50px;
+    margin-bottom: -10px;
   }
   aside img {
     position: absolute;
-    -webkit-box-shadow: 1px 0px 10px black;
-            box-shadow: 1px 0px 10px black;
+    border-radius: 100px;
     top: 0px;
-    right: 0px;
-    max-width: 250px;
-    min-width: 250px;
-    height: 200px;
+    right: 20px;
+    max-width: 200px;
+    min-width: 200px;
+    height: 150px;
   }
   article {
     width: 30%;

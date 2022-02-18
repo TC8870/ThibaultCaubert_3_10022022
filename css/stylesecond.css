@@ -101,7 +101,7 @@ h2, h3, p, nav input, figure, li {
     width: 6px;
   }
   100% {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -110,7 +110,7 @@ h2, h3, p, nav input, figure, li {
     width: 6px;
   }
   100% {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -232,11 +232,15 @@ section p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 75%;
   font-weight: 100;
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 2px;
+}
+
+section p strong {
+  display: block;
+  min-width: 30px;
 }
 
 section:hover {
@@ -259,6 +263,9 @@ h2 {
   margin: 5px;
   padding-right: 10px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .Platbloc2 {
@@ -594,15 +601,15 @@ section:hover .Platbloc2 {
           animation-name: Plattaillebloc;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 section:hover i {
   -webkit-animation-name: Platrotation;
           animation-name: Platrotation;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transition-timing-function: cubic-bezier(1, -0.05, 0, 1);

@@ -22,18 +22,27 @@
 /*Section*/
     section {
         @include menuarticlesform;
-        h3{@include menuarticlesh3;    }
-        figure{@include menuarticlefigure;}
-        p{@include menuarticlesp;}
+            h3{@include menuarticlesh3;}
+            figure{@include menuarticlefigure;}
+            p{@include menuarticlesp;
+                strong{
+                display: block;
+                min-width: 30px;}
+            }
         &:hover{@include hovereffet}
     }
 
     h2 {@include menuarticlesh2}
 
-    .Platbloc1{@include Platbloc1}
+    .Platbloc1{@include Platbloc1;
+
+        white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
     .Platbloc2{@include Platbloc2;
-    i{color:white;
-    font-size: 25px;}}
+        i{color:white;
+        font-size: 25px;}}
 
     figure.btnexplore {@include multicolorbtn;
         margin-top:40px;
@@ -120,10 +129,10 @@ section:hover{
     .Platbloc2{
         animation-name:Plattaillebloc ;
         animation-fill-mode: forwards;
-        animation-duration: 3s;}
+        animation-duration: 1s;}
     i{
         animation-name: Platrotation;
-        animation-duration: 3s;
+        animation-duration: 1s;
         animation-fill-mode: forwards;
         transition-timing-function:cubic-bezier(1,-0.05,0,1)}
     }

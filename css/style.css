@@ -101,7 +101,7 @@ h2, h3, p, nav input, figure, li {
     width: 6px;
   }
   100% {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -110,7 +110,7 @@ h2, h3, p, nav input, figure, li {
     width: 6px;
   }
   100% {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -481,7 +481,7 @@ i.fa-utensils, i.fa-handshake-angle {
   position: absolute;
   width: 100%;
   top: 50px;
-  font-size: 400px;
+  font-size: 350px;
 }
 
 .fas.fa-spinner {
@@ -517,19 +517,18 @@ header, nav, aside, section, footer {
   margin-right: 20px;
   padding: 0px;
   position: relative;
-  background-color: red;
 }
 
 i.i1.fas.fa-heart {
   color: #9356DC;
   opacity: 1;
   font-size: 18px;
-  text-shadow: 0px 0px 2px black;
   position: absolute;
 }
 
 i.i2.fas.fa-heart {
   color: white;
+  background-color: white;
   text-shadow: 0px 0px 2px black;
   font-size: 18px;
   position: absolute;

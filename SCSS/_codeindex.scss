@@ -174,13 +174,14 @@ header,nav,aside,section,footer{opacity: 0;
     margin-right:20px;
     padding:0px;
     position: relative;}
-    
 i.i1.fas.fa-heart{
-    color:$colorprimary;
+    background: -webkit-linear-gradient(250deg, $colorprimary, $colorsecondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
     opacity: 1;
     font-size: 18px;
     position: absolute;}
-
 i.i2.fas.fa-heart{
     color:white;
     background-color: white;

@@ -32,18 +32,16 @@
         &:hover{@include hovereffet}
     }
 
-    h2 {@include menuarticlesh2}
+h2 {@include menuarticlesh2}
 
-    .Platbloc1{@include Platbloc1;
-
+.Platbloc1{@include Platbloc1;
         white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;}
+        overflow: hidden;
+        text-overflow: ellipsis;}
 
-    .Platbloc2{@include Platbloc2;
+.Platbloc2{@include Platbloc2;
         i{color:white;
         font-size: 25px;}}
-
     figure.btnexplore {@include multicolorbtn;
         margin-top:40px;
         &:hover{@include hovereffet}}

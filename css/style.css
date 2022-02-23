@@ -255,9 +255,7 @@ aside figure.btnexplore {
 }
 
 aside figure:hover {
-  opacity: 0.75;
-  -webkit-box-shadow: 1px 0px 10px black;
-          box-shadow: 1px 0px 10px black;
+  background-color: #f5edff;
 }
 
 aside figure figcaption {
@@ -283,10 +281,7 @@ i.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {
   margin-right: 15%;
 }
 
-i.fas.fa-store {
-  color: #9356DC;
-}
-
+/*i.fas.fa-store{color:$colorprimary;}*/
 /*Section*/
 section {
   padding-bottom: 50px;
@@ -309,9 +304,7 @@ section figure {
 }
 
 section figure:hover {
-  opacity: 0.75;
-  -webkit-box-shadow: 1px 0px 10px black;
-          box-shadow: 1px 0px 10px black;
+  background-color: #f5edff;
 }
 
 section figcaption, section h4 {
@@ -351,6 +344,10 @@ section img {
 
 section a {
   text-decoration: none;
+}
+
+figure:hover .iconefct {
+  color: #9356DC;
 }
 
 article figure {

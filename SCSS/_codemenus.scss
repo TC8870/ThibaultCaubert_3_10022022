@@ -109,12 +109,16 @@ h2 {@include menuarticlesh2}
         padding:0px;
         position: relative;
         background-color: red;}
-    i.i1.fas.fa-heart{color:$colorprimary;
+    i.i1.fas.fa-heart{
+        background: -webkit-linear-gradient(250deg, $colorprimary, $colorsecondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip:text;
         opacity: 1;
         font-size: 30px;
-        text-shadow: 0px 0px 2px black;
         position: absolute;}
-    i.i2.fas.fa-heart{color:$colorgrisclair;
+    i.i2.fas.fa-heart{
+        color:$colorgrisclair;
         font-size: 30px;
         text-shadow: 0px 0px 2px black;
         position: absolute;

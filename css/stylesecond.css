@@ -246,6 +246,7 @@ section p strong {
 section:hover {
   -webkit-box-shadow: 5px 5px 5px #2b2b2b;
           box-shadow: 5px 5px 5px #2b2b2b;
+  opacity: 0.6;
 }
 
 h2 {
@@ -317,6 +318,7 @@ figure.btnexplore {
 figure.btnexplore:hover {
   -webkit-box-shadow: 5px 5px 5px #2b2b2b;
           box-shadow: 5px 5px 5px #2b2b2b;
+  opacity: 0.6;
 }
 
 /*Footer*/

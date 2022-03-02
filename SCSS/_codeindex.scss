@@ -48,7 +48,8 @@ aside {
         font-size: 20px;}
     figure {
         @include fonctionnementmenu;
-        &.btnexplore {@include multicolorbtn}
+        &.btnexplore {@include multicolorbtn;
+            &:hover{@include hovereffet}}
         &:hover {@include hovereffet2}
         figcaption {width: 75%;  }    }
 }  

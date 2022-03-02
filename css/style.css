@@ -254,6 +254,12 @@ aside figure.btnexplore {
           box-shadow: 0px 1px 2px black;
 }
 
+aside figure.btnexplore:hover {
+  -webkit-box-shadow: 5px 5px 5px #2b2b2b;
+          box-shadow: 5px 5px 5px #2b2b2b;
+  opacity: 0.6;
+}
+
 aside figure:hover {
   background-color: #f5edff;
 }
@@ -305,6 +311,7 @@ section figure {
 section figure:hover {
   -webkit-box-shadow: 5px 5px 5px #2b2b2b;
           box-shadow: 5px 5px 5px #2b2b2b;
+  opacity: 0.6;
 }
 
 section figcaption, section h4 {

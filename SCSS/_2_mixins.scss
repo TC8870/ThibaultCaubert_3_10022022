@@ -164,7 +164,8 @@
     background: linear-gradient(350deg, $colorprimary,$colorsecondary);
     box-shadow: 0px 1px 2px black;}
 @mixin hovereffet{
-    box-shadow: 5px 5px 5px $colorgrisdark;}
+    box-shadow: 5px 5px 5px $colorgrisdark;
+    opacity: 0.6;}
 @mixin hovereffet2{
     background-color:#f5edff;}
 
